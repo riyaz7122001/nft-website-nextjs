@@ -3,7 +3,7 @@ import Button from "./Button"
 
 const Analytics = () => {
     return (
-        <section id="About" className={`${layout.section} items-center justify-around xl:px-0 sm:px-16 px-6`}>
+        <section id="About" className={`${layout.section} items-center justify-around xl:px-0 sm:px-16 px-6 mt-[76px]`}>
             <img src="/icons/analytics.svg" alt="analytics" className="w-[528px] object-contain" />
             <div className="flex flex-col mx-4 ml-8">
                 <h3 className="font-outfit font-semibold tracking-widest uppercase sm:text-[18px] text-[16px]

@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
     return (
-        <section className={`flex flex-col justify-center items-center w-full ${styles.marginY} ${styles.paddingY}`}>
+        <section className={`flex flex-col justify-center items-center w-full ${styles.marginY} ${styles.paddingY} mt-[76px]`}>
             <h3 className="font-outfit font-semibold tracking-widest uppercase sm:text-[18px] text-[16px]
                  text-tertiary sm:leading-[27.8px] leading-[20px]">
                 testimonials
