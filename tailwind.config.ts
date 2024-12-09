@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         primary: "#010922",
         secondary: "#8A89DA",
+        tertiary: "#85CECF",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
