@@ -1,10 +1,10 @@
 const styles = {
-  boxWidth: "xl:max-w-[1600px] w-full",
+  boxWidth: "xl:max-w-[160px] w-full",
 
   heading2:
     "font-outfit font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   paragraph:
-    "font-outfit font-normal text-dimWhite sm:text-[20px] text-[16px] leading-[27.5px]",
+    "font-outfit font-normal text-dimWhite sm:text-[16px] text-[14px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

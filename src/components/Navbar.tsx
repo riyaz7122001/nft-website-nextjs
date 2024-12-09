@@ -28,12 +28,14 @@ const Navbar = () => {
                         key={item.id}
                         className="hover:text-secondary font-medium text-[20px]"
                     >
-                        {item.menu}
+                        <a href={`#${item.menu}`} className="hover:text-white">
+                            {item.menu}
+                        </a>
                     </li>
                 ))}
             </ul>
 
-            <div className="sm:hidden flex flex-1 justify-end items-center">
+            <div className="sm:hidden flex flex-1 justify-end items-center cursor-pointer">
                 <img
                     src={menu ? "/icons/close.svg" : "/icons/menu.svg"}
                     alt="menu"

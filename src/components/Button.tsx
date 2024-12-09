@@ -11,20 +11,24 @@ interface ButtonProps {
     textColor?: string;
     onClick?: () => void;
     borderColor?: string;
-    variant?: "primary" | "secondary"; // Button type
+    variant?: "primary" | "secondary";
+    minWidth?: string | number;
+    maxWidth?: string | number;
 }
 
 const Button: React.FC<ButtonProps> = ({
     text,
     styles = "",
-    width = "255px",
+    width = "auto", // Allow width to be dynamic
     height = "73px",
-    borderRadius = "83px 0 0 0",
+    borderRadius = "50px",
     opacity = 1,
     bgColor = "bg-secondary",
     textColor = "text-white",
     onClick,
     variant = "primary",
+    minWidth = "250px", // Ensure minimum width
+    maxWidth = "100%", // Allow button to grow responsively
 }) => {
     const variantStyles =
         variant === "secondary"
@@ -33,12 +37,14 @@ const Button: React.FC<ButtonProps> = ({
     return (
         <button
             type="button"
-            className={`tracking-wider font-outfit font-semibold md:w-[250px] w-[200px] md:h-[73px] h-[65px] 
-                text-[18px] py-[16px] px-[60px] rounded-[50%] ${variantStyles} ${styles}`}
+            className={`tracking-wider font-outfit font-semibold text-[18px] py-[16px] px-[60px] 
+                rounded-[50%] whitespace-nowrap ${variantStyles} ${styles}`} // Prevent text wrapping
             style={{
                 width,
                 height,
                 borderRadius,
+                minWidth,
+                maxWidth,
                 opacity,
             }}
             onClick={onClick}

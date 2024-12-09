@@ -33,8 +33,8 @@ const Hero = () => {
             <div className="flex flex-1 w-full justify-center items-center xl:px-0 sm:px-16 px-6">
                 <img src="/icons/hero.svg" alt="hero" />
             </div>
-            <div className="absolute z-[1] w-[60%] h-[35%] left-[-10%] top-[-20%] pink__gradient"></div>
-            <div className="absolute z-[2] w-[40%] h-[35%] top-10 white__gradient"></div>
+            <div className="absolute z-[1] w-[40%] h-[35%] left-[-10%] top-[-20%] pink__gradient"></div>
+            <div className="absolute z-[2] w-[30%] h-[35%] top-10 white__gradient"></div>
 
         </section >
     )
