@@ -106,3 +106,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(650px);
 }
+
+.blue-card{
+  background: linear-gradient(277.04deg, #85CECF -15.3%, #4F4EDF 111.33%);
+}

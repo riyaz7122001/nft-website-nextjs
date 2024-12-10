@@ -1,5 +1,7 @@
 import Analytics from "@/components/Analytics"
+import CallToAction from "@/components/CallToAction"
 import Feature from "@/components/Feature"
+import Footer from "@/components/Footer"
 import GetApp from "@/components/GetApp"
 import Hero from "@/components/Hero"
 import Navbar from "@/components/Navbar"
@@ -26,6 +28,8 @@ const Home = () => {
           <Analytics />
           <GetApp />
           <Testimonials />
+          <CallToAction />
+          <Footer />
         </div>
       </div>
       <div className="absolute z-[1] w-[40%] h-[60%] right-[-30%] top-[30%] green__gradient"></div>

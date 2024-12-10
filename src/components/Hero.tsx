@@ -5,9 +5,9 @@ const Hero = () => {
     return (
         <section id="Home" className={`flex md:flex-row flex-col ${styles.paddingY} md:my-16 my-0`} >
             <div className="flex flex-1 w-full  flex-col justify-between items-start xl:px-0 sm:px-16 px-6 md:gap-6 gap-8">
-                <h1 className={`${styles.heading2} md:text-[84px] text-[70px] font-semibold sm:leading-[116px] leading-[85px]`}>
-                    Discover <br className="md:block hidden" />
-                    And Collect <br className="md:block hidden" />
+                <h1 className={`${styles.heading2} sm:text-[84px] text-[70px] font-semibold sm:leading-[116px] leading-[70px]`}>
+                    Discover <br className="ss:block hidden" />
+                    And Collect <br className="ss:block hidden" />
                     Rare NFTs
                 </h1>
                 <p className={`${styles.paragraph} text-dimWhite`}>

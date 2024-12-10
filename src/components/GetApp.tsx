@@ -3,7 +3,7 @@ import Button from "./Button"
 
 const GetApp = () => {
     return (
-        <section id="About" className={`${layout.sectionReverse} items-center justify-around xl:px-0 sm:px-16 px-6 mt-[76px]`}>
+        <section id="About" className={`${layout.sectionReverse} sm:flex-row flex-col sm:gap-0 gap-12  items-center justify-around xl:px-0 sm:px-16 px-6 mt-[76px]`}>
             <div className="flex flex-col mx-4 ml-8">
                 <h3 className="font-outfit font-semibold tracking-widest uppercase sm:text-[18px] text-[16px]
                  text-tertiary sm:leading-[27.8px] leading-[20px]">

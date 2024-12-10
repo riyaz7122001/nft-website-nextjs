@@ -1,5 +1,4 @@
 import React from "react";
-
 interface ButtonProps {
     text: string;
     styles?: string;
@@ -16,10 +15,10 @@ interface ButtonProps {
     maxWidth?: string | number;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
     text,
     styles = "",
-    width = "auto", // Allow width to be dynamic
+    width = "auto",
     height = "73px",
     borderRadius = "50px",
     opacity = 1,
@@ -27,9 +26,9 @@ const Button: React.FC<ButtonProps> = ({
     textColor = "text-white",
     onClick,
     variant = "primary",
-    minWidth = "250px", // Ensure minimum width
-    maxWidth = "100%", // Allow button to grow responsively
-}) => {
+    minWidth = "250px",
+    maxWidth = "100%",
+}: ButtonProps) => {
     const variantStyles =
         variant === "secondary"
             ? `bg-transparent border border-[#85CECF] ${textColor}`
@@ -38,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
         <button
             type="button"
             className={`tracking-wider font-outfit font-semibold text-[18px] py-[16px] px-[60px] 
-                rounded-[50%] whitespace-nowrap ${variantStyles} ${styles}`} // Prevent text wrapping
+                rounded-[50%] whitespace-nowrap ${variantStyles} ${styles}`}
             style={{
                 width,
                 height,
